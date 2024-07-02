@@ -7,6 +7,5 @@ dependencies:
   - ipywidgets
   - numpy
   - matplotlib
-
-- pip:
-  - tesswcs==1.1.2
+  - pip:
+    - tesswcs==1.1.2

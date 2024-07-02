@@ -2,7 +2,6 @@ name: Update Hugging Face repository
 on:
   push:
     branches: [main]
-
   workflow_dispatch:
 
 jobs:
@@ -17,4 +16,4 @@ jobs:
         env:
           HF_USER: ${{ secrets.HF_USER }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://huggingface.co/spaces/chedges/tess-pointing-checker main --force
+        run: git push https://${{ secrets.HF_USER }}:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/${{ secrets.HF_USER }}/tess-pointing-checker main --force

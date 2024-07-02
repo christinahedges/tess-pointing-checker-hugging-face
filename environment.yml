@@ -2,20 +2,9 @@ name: voila
 channels:
   - conda-forge
 dependencies:
-  - python=3.10
+  - python=3.9
+  - voila
   - ipywidgets
-  - ipykernel
-  - pandas
-  - pip
-  - bokeh
-  - bqplot
-  - ipympl=0.9.2
-  - jupyterlab-fasta
+  - numpy
   - matplotlib
-  - scipy
-  - vega_datasets
-  - ipyvolume
-
-  - pip:
-    - voila==0.5.0
-    - voila-topbar==0.1.1
+  - tesswcs==1.1.2
